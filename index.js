@@ -13,10 +13,18 @@ app.listen(port, () => {
   console.log(`Server starting on port ${port}...`);
 }); 
 
-app.get('/', (req, res) =>{
+
+app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/results', (req, res) =>{
+
+app.get('/results', (req, res) => {
   res.render('results');
+});
+
+
+app.get('/quiz', (req, res) => {
+
+  res.render('quiz');
 });
