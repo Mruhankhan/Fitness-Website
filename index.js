@@ -19,6 +19,7 @@ app.get('/', (req, res) =>{
 
 app.post('/results', (req, res) =>{
   let bmi = req.body['height'] / req.body['weight']**2
+  console.log(req)
   console.log(bmi)
   res.render('results')
 })
