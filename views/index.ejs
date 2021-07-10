@@ -16,8 +16,8 @@
     <div id="main">
         <h1 id="title">SuperHealth</h1>
         <form action = "/" method = "POST" style="color:antiquewhite">
-          Height: <input type = "text" name = "height" required>  <br>
-          Weight: <input type = "text" name = "weight" required>
+          Height: <input type = "text" name = "height" required id="height">  <br>
+          Weight: <input type = "text" name = "weight" required id="weight">
           <input type = "submit" value = "Submit">
           <% if (message != null) {%>
             <h2 style="color:antiquewhite"><%= message %></h2>

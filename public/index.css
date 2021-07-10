@@ -1,11 +1,6 @@
 body {
     background-color: black;
 }
-
-.card {
-    padding: 1%;
-}
-
 .subheading {
     font-family: "Bangers";
     color: black;
@@ -13,14 +8,18 @@ body {
 }
 
 #main {
-    padding: 3%;
+    padding: 15%;
+    margin-left: 15%;
 }
 
 #title {
     font-family: "Press Start 2P";
     color: #3dce65;
+    font-size: 400%;
 }
 
-.backing-box {
-    background-color: #3dce65;
+#height{
+    position: absolute;
+    top: 43%;
+    left: 34%;
 }
