@@ -18,5 +18,6 @@ function messageBmi(bmi)
     }
 }
 
+module.exports = messageBmi
 
 

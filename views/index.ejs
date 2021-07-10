@@ -15,18 +15,13 @@
   <body>
     <div id="main">
         <h1 id="title">SuperHealth</h1>
-        <form id="input-group" class="mb-3 card" action="/results" method="POST">
-            <label for="exampleFormControlInput1" class="form-label subheading">Age</label>
-            <input type="number" class="form-control" id="age" placeholder="How old are you?">
-
-            <label for="exampleFormControlInput1" class="form-label subheading">Height</label>
-            <input type="number" class="form-control" id="height" placeholder="How tall are you?">
-
-            <label for="exampleFormControlInput1" class="form-label subheading">Weight</label>
-            <input type="number" class="form-control" id="weight" placeholder="How much do you weigh?">
-            <br/>
-            <button type="button" class="btn btn-primary" class="mb-4" id="button-submit">Submit</button>
-        </form>
+        <form action = "/" method = "GET">
+          Height: <input type = "text" name = "height">  <br>
+          Weight: <input type = "text" name = "weight">
+          <input type = "submit" value = "Submit">
+          <% if (message != null) {%>
+            <h2><%= message %></h2>
+          <% } %>
 
     </div>
     <!-- Optional JavaScript -->
