@@ -2,10 +2,11 @@ let buttonSubmit = document.getElementById('button-submit')
 buttonSubmit.addEventListener('click', () => {
     console.log('clicked')
     let ageInput = document.getElementById('age')
-    console.log(ageInput.value);
-    if (ageInput.value === "1") //if the input is incorrect
+    let heightInput = document.getElementById('height')
+    let weightInput = document.getElementById('weight')
+    if (ageInput.value === "1" && heightInput.value === "29" && weightInput.value === "21") //if the input is incorrect
     {
-        alert()
+        alert("you are fit")
     }
     else //if the input is correct
     {
