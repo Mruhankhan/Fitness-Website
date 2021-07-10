@@ -1,4 +1,5 @@
 require('dotenv').config();
+const { response } = require('express');
 const express = require('express');
 const app = express();
 
@@ -26,8 +27,11 @@ app.post('/results', (req, res) =>{
   res.render('results')
 })
 
-
-app.get('/quiz', (req, res) => {
-
-  res.render('quiz');
-});
+app.get("/quiz", (req, res) => {
+  console.log("tesitng");
+  let penis = {
+    death:req.query.exercisequestion0
+  };
+  console.log(penis);
+  res.render("quiz");
+})
