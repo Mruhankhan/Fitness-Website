@@ -1,7 +1,9 @@
 require('dotenv').config();
 const fs = require('fs')
 const { json } = require('express');
+const { response } = require('express');
 const express = require('express');
+const bodyParser = require("body-parser");
 const app = express();
 const bodyParser = require('body-parser')
 
@@ -30,7 +32,7 @@ function messageBmi(bmi)
     }
 }
 
-app.use(express.static('public'));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.set('view engine', 'ejs');
 
@@ -57,3 +59,11 @@ app.post('/', (req, res) => {
 
 //const j = JSON.parse(fs.readFileSync('./weights.json'))
 //console.log(j)
+app.get('/quiz', (req, res) => {
+  res.render("quiz");
+});
+
+app.post("/quiz", (req, res) => {
+  console.log(req.body);
+  res.render("quiz");
+})
