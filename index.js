@@ -1,10 +1,11 @@
 require('dotenv').config();
 const { response } = require('express');
 const express = require('express');
+const bodyParser = require("body-parser");
 const app = express();
 
 
-app.use(express.static('public'));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.set('view engine', 'ejs');
 
@@ -27,11 +28,11 @@ app.post('/results', (req, res) =>{
   res.render('results')
 })
 
-app.get("/quiz", (req, res) => {
-  console.log("tesitng");
-  let penis = {
-    death:req.query.exercisequestion0
-  };
-  console.log(penis);
+app.get('/quiz', (req, res) => {
+  res.render("quiz");
+});
+
+app.post("/quiz", (req, res) => {
+  console.log(req.body);
   res.render("quiz");
 })
