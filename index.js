@@ -1,7 +1,11 @@
 require('dotenv').config();
+const fs = require('fs')
+const { json } = require('express');
 const express = require('express');
 const app = express();
-let message = null
+const bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({extended: true}))
 
 function messageBmi(bmi)
 {
@@ -37,18 +41,19 @@ app.listen(port, () => {
 }); 
 
 
-// app.get('/', (req, res) => {
-//   res.render('index');
-// });
+ app.get('/', (req, res) => {
+   const message = "..."
+   res.render('index', {message});
+ });
 
-
-
-app.get('/', (req, res) => {
-  var bmi = 0
-  bmi = (req.query['weight']) / ((req.query['height'] / 100)**2)
-  console.log(`With weight ${req.query['weight']} kg and height ${req.query['height']} cm Your BMI is${bmi}`)
-  console.log(messageBmi)
-  message = messageBmi(bmi)
+app.post('/', (req, res) => {
+  console.log(req.body)
+  const bmi = (req.body.weight) / ((req.body.height / 100)**2)
+  console.log(`With weight ${req.body.weight} kg and height ${req.body.height} cm Your BMI is${bmi}`)
+  const message = messageBmi(bmi)
   console.log(message)
   res.render("index", {message});
 });
+
+//const j = JSON.parse(fs.readFileSync('./weights.json'))
+//console.log(j)
