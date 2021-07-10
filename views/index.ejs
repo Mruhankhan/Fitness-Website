@@ -10,30 +10,122 @@
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>SuperHealth</title>
+    <link rel="stylesheet" href="quiz.css">
+    <title>Health Quiz</title>
   </head>
   <body>
     <div id="main">
-        <h1 id="title">SuperHealth</h1>
-        <form id="input-group" class="mb-3 card" action="/results" method="POST">
-            <label for="exampleFormControlInput1" class="form-label subheading">Age</label>
-            <input type="number" class="form-control" id="age" placeholder="How old are you?">
+      <h1 id="title">Health Quiz</h1>
+      <div class="mb-3 card backing-box">
+        <div class="card text-dark bg-light mb-3">
+          <div class = "card-body">
+            <h5 classs = "card-title">How much have you mentald in the past 12 months?</h5>
+            <input type = "radio" id = "exercise-question-0" name = "exercise-question">
+            <label for = "exercise-question-0">never</label><br>
+            <input type = "radio" id = "exercise-question-1" name = "exercise-question">
+            <label for = "exercise-question-1">1 time a week</label><br>
+            <input type = "radio" id = "exercise-question-2" name = "exercise-question">
+            <label for = "exercise-question-2">2 to 3 times a week</label><br>
+            <input type = "radio" id = "exercise-question-3" name = "exercise-question">
+            <label for = "exercise-question-3">more than 4 times a week</label><br>
+          </div>
+        </div>
+      </div>
 
-            <label for="exampleFormControlInput1" class="form-label subheading">Height</label>
-            <input type="number" class="form-control" id="height" placeholder="How tall are you?">
 
-            <label for="exampleFormControlInput1" class="form-label subheading">Weight</label>
-            <input type="number" class="form-control" id="weight" placeholder="How much do you weigh?">
-            <br/>
-            <button type="button" class="btn btn-primary" class="mb-4" id="button-submit">Submit</button>
-        </form>
+      <div class="mb-3 card backing-box">
+        <div class="card text-dark bg-light mb-3">
+          <div class = "card-body">
+            <h5 classs = "card-title">How much have you engaged in mental activity in the past 12 months?</h5>
+            <input type = "radio" id = "mental-question-0" name = "mental-question">
+            <label for = "mental-question-0">never</label><br>
+            <input type = "radio" id = "mental-question-1" name = "mental-question">
+            <label for = "mental-question-1">1 time a week</label><br>
+            <input type = "radio" id = "mental-question-2" name = "mental-question">
+            <label for = "mental-question-2">2 to 3 times a week</label><br>
+            <input type = "radio" id = "mental-question-3" name = "mental-question">
+            <label for = "mental-question-3">more than 4 times a week</label><br>
+          </div>
+        </div>
+      </div>
 
+
+      <div class="mb-3 card backing-box">
+        <div class="card text-dark bg-light mb-3">
+          <div class = "card-body">
+            <h5 classs = "card-title">How often do you drink alcohol?</h5>
+            <input type = "radio" id = "alcohol-question-0" name = "alcohol-question">
+            <label for = "alcohol-question-0">never</label><br>
+            <input type = "radio" id = "alcohol-question-1" name = "alcohol-question">
+            <label for = "alcohol-question-1">once a month</label><br>
+            <input type = "radio" id = "alcohol-question-2" name = "alcohol-question">
+            <label for = "alcohol-question-2">2 to 4 times a month</label><br>
+            <input type = "radio" id = "alcohol-question-3" name = "alcohol-question">
+            <label for = "alcohol-question-3">2 to 3 times a week</label><br>
+            <input type = "radio" id = "alcohol-question-3" name = "alcohol-question">
+            <label for = "alcohol-question-3">4 times a week and more</label><br>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mb-3 card backing-box">
+        <div class="card text-dark bg-light mb-3">
+          <div class = "card-body">
+            <h5 classs = "card-title">Do you smoke regularly?</h5>
+            <input type = "radio" id = "smoke-question-0" name = "smoke-question">
+            <label for = "smoke-question-0">no</label><br>
+            <input type = "radio" id = "smoke-question-1" name = "smoke-question">
+            <label for = "smoke-question-1">yes, sometimes</label><br>
+            <input type = "radio" id = "smoke-question-2" name = "smoke-question">
+            <label for = "smoke-question-2">yes, regularly</label><br>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="mb-3 card backing-box">
+        <div class="card text-dark bg-light mb-3">
+          <div class = "card-body">
+            <h5 classs = "card-title">How regular are you social interactions</h5>
+            <input type = "radio" id = "social-question-0" name = "social-question">
+            <label for = "social-question-0">very regular</label><br>
+            <input type = "radio" id = "social-question-1" name = "social-question">
+            <label for = "social-question-1">regular</label><br>
+            <input type = "radio" id = "social-question-1" name = "social-question">
+            <label for = "social-question-2">somewhat regular</label><br>
+            <input type = "radio" id = "social-question-1" name = "social-question">
+            <label for = "social-question-3">not regular</label><br>
+            <input type = "radio" id = "social-question-1" name = "social-question">
+            <label for = "social-question-4">somewhat irregular</label><br>
+            <input type = "radio" id = "social-question-2" name = "social-question">
+            <label for = "social-question-5">very irregular</label><br>
+          </div>
+        </div>
+      </div>
+
+
+      <input type = "submit" value = "Submit" class = "btn btn-primary" onclick="outputQuiz();"></input>
+
+
+  
+    
+
+
+
+        
+        
+
+
+      </div>
     </div>
-    <!-- Optional JavaScript -->
+    <!-- javascript assets for bootstrap -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="work.js"></script>
+    <!-- Scripts needed for webpage -->
+    <script src="quiz.js"></script>
 </body>
 </html>
