@@ -1,7 +1,4 @@
 require('dotenv').config();
-const fs = require('fs')
-const { json } = require('express');
-const { response } = require('express');
 const express = require('express');
 const bodyParser = require("body-parser");
 const app = express();
@@ -50,15 +47,14 @@ app.listen(port, () => {
 
 app.post('/', (req, res) => {
   console.log(req.body)
-  const bmi = (req.body.weight) / ((req.body.height / 100)**2)
+  const bmi = (req.body.weight) / ((req.body.height / 100)*2)
   console.log(`With weight ${req.body.weight} kg and height ${req.body.height} cm Your BMI is${bmi}`)
   const message = messageBmi(bmi)
   console.log(message)
   res.render("index", {message});
 });
 
-//const j = JSON.parse(fs.readFileSync('./weights.json'))
-//console.log(j)
+
 app.get('/quiz', (req, res) => {
   res.render("quiz");
 });

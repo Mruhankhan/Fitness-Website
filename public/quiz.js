@@ -19,6 +19,16 @@ let radioEighteen = document.getElementById('social-question-2')
 let radionNineteen = document.getElementById('social-question-3')
 let radioTwenty = document.getElementById('social-question-4')
 let radioTwentyOne = document.getElementById('social-question-5')
+let radioTwentyTwo = document.getElementById('going-outside-question-0')
+let radioTwentyThree = document.getElementById('going-outside-question-1')
+let radionTwentyFour = document.getElementById('going-outside-question-2')
+let radioTwentyFive = document.getElementById('going-outside-question-3')
+let radioTwentySix = document.getElementById('going-outside-question-4')
+let radioTwentySeven = document.getElementById('milk-question-0')
+let radioTwentyEight = document.getElementById('milk-question-1')
+let radioTwentyNine = document.getElementById('milk-question-2')
+let radionThrity = document.getElementById('milk-question-3')
+let radionThrityOne = document.getElementById('milk-question-4')
 
 
 radioOne.addEventListener('click', () =>{
@@ -83,4 +93,34 @@ radioTwenty.addEventListener('click', () =>{
 })
 radioTwentyOne.addEventListener('click', () =>{
     alert("Start going alot!")
+})
+radioTwentyTwo.addEventListener('click', () =>{
+    alert("Start going alot!")
+})
+radioTwentyThree.addEventListener('click', () =>{
+    alert("Start going alot!")
+})
+radionTwentyFour.addEventListener('click', () =>{
+    alert("You can go more")
+})
+radioTwentyFive.addEventListener('click', () =>{
+    alert("Nice Amount")
+})
+radioTwentySix.addEventListener('click', () =>{
+    alert("Start Drinking Milk")
+})
+radioTwentySeven.addEventListener('click', () =>{
+    alert("Start Drinking Milk More!")
+})
+radioTwentyEight.addEventListener('click', () =>{
+    alert("Bad Amount More milk")
+})
+radioTwentyNine.addEventListener('click', () =>{
+    alert("Good But More")
+})
+radionThrity.addEventListener('click', () =>{
+    alert("Good Can Be Better ")
+})
+radionThrityOne.addEventListener('click', () =>{
+    alert("Nice!")
 })
