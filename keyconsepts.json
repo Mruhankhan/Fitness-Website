@@ -1,6 +1,6 @@
 {
-    "title":"Know your slef better",
-    "Main Functions": "Age height weigth", 
+    "title":"Super Health",
+    "Main Functions": "height weigth", 
     "Math key" : "x = y + 3",
     "routes":"setup"
 }
