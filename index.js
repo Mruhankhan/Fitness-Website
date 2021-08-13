@@ -29,7 +29,6 @@ function messageBmi(bmi)
     }
 }
 
-app.use(bodyParser.urlencoded({extended: true}));
 
 app.set('view engine', 'ejs');
 
